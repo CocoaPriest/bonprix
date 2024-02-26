@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		9E5D45BC2B8D2F58008633F4 /* bonprixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45BB2B8D2F58008633F4 /* bonprixApp.swift */; };
-		9E5D45BE2B8D2F58008633F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45BD2B8D2F58008633F4 /* ContentView.swift */; };
+		9E5D45BE2B8D2F58008633F4 /* ProductOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45BD2B8D2F58008633F4 /* ProductOverview.swift */; };
 		9E5D45C02B8D2F5A008633F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D45BF2B8D2F5A008633F4 /* Assets.xcassets */; };
 		9E5D45C32B8D2F5A008633F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D45C22B8D2F5A008633F4 /* Preview Assets.xcassets */; };
+		9E5D45CA2B8D2FD7008633F4 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45C92B8D2FD7008633F4 /* ProductDetail.swift */; };
+		9E5D45D12B8D310D008633F4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45D02B8D310D008633F4 /* DataManager.swift */; };
+		9E5D45D32B8D31BB008633F4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45D22B8D31BB008633F4 /* Product.swift */; };
+		9E5D45D52B8D328B008633F4 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45D42B8D328B008633F4 /* ProductCell.swift */; };
+		9E5D45D62B8D339E008633F4 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D45CE2B8D3071008633F4 /* products.json */; };
+		9E5D45D82B8D48AF008633F4 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45D72B8D48AF008633F4 /* Price.swift */; };
+		9E5D45DA2B8D4A66008633F4 /* ProductVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D45D92B8D4A66008633F4 /* ProductVariant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E5D45B82B8D2F58008633F4 /* bonprix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bonprix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5D45BB2B8D2F58008633F4 /* bonprixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bonprixApp.swift; sourceTree = "<group>"; };
-		9E5D45BD2B8D2F58008633F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E5D45BD2B8D2F58008633F4 /* ProductOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOverview.swift; sourceTree = "<group>"; };
 		9E5D45BF2B8D2F5A008633F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E5D45C22B8D2F5A008633F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E5D45C92B8D2FD7008633F4 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		9E5D45CE2B8D3071008633F4 /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		9E5D45D02B8D310D008633F4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9E5D45D22B8D31BB008633F4 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9E5D45D42B8D328B008633F4 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		9E5D45D72B8D48AF008633F4 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		9E5D45D92B8D4A66008633F4 /* ProductVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVariant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				9E5D45BB2B8D2F58008633F4 /* bonprixApp.swift */,
-				9E5D45BD2B8D2F58008633F4 /* ContentView.swift */,
+				9E5D45CB2B8D300E008633F4 /* Views */,
+				9E5D45CC2B8D301E008633F4 /* Model */,
+				9E5D45CF2B8D30FF008633F4 /* Managers */,
+				9E5D45CD2B8D3026008633F4 /* Resources */,
 				9E5D45BF2B8D2F5A008633F4 /* Assets.xcassets */,
 				9E5D45C12B8D2F5A008633F4 /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				9E5D45C22B8D2F5A008633F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E5D45CB2B8D300E008633F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E5D45BD2B8D2F58008633F4 /* ProductOverview.swift */,
+				9E5D45D42B8D328B008633F4 /* ProductCell.swift */,
+				9E5D45C92B8D2FD7008633F4 /* ProductDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E5D45CC2B8D301E008633F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E5D45D22B8D31BB008633F4 /* Product.swift */,
+				9E5D45D92B8D4A66008633F4 /* ProductVariant.swift */,
+				9E5D45D72B8D48AF008633F4 /* Price.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E5D45CD2B8D3026008633F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E5D45CE2B8D3071008633F4 /* products.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E5D45CF2B8D30FF008633F4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9E5D45D02B8D310D008633F4 /* DataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5D45D62B8D339E008633F4 /* products.json in Resources */,
 				9E5D45C32B8D2F5A008633F4 /* Preview Assets.xcassets in Resources */,
 				9E5D45C02B8D2F5A008633F4 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E5D45BE2B8D2F58008633F4 /* ContentView.swift in Sources */,
+				9E5D45BE2B8D2F58008633F4 /* ProductOverview.swift in Sources */,
+				9E5D45D82B8D48AF008633F4 /* Price.swift in Sources */,
+				9E5D45D12B8D310D008633F4 /* DataManager.swift in Sources */,
+				9E5D45D32B8D31BB008633F4 /* Product.swift in Sources */,
+				9E5D45D52B8D328B008633F4 /* ProductCell.swift in Sources */,
+				9E5D45DA2B8D4A66008633F4 /* ProductVariant.swift in Sources */,
 				9E5D45BC2B8D2F58008633F4 /* bonprixApp.swift in Sources */,
+				9E5D45CA2B8D2FD7008633F4 /* ProductDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
