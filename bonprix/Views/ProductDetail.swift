@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductDetail: View {
     var product: Product
+    @State private var selectedColor: String = ""
 
     var body: some View {
         VStack {
@@ -23,7 +24,7 @@ struct ProductDetail: View {
                     }
                     .scaledToFit()
 
-                    ProductBottomView(product: product)
+                    ProductBottomView(product: product, selectedColor: $selectedColor)
                         .clipShape(UnevenRoundedRectangle(topLeadingRadius: 15, topTrailingRadius: 20))
                         .offset(y: -25)
                 }
@@ -34,14 +35,26 @@ struct ProductDetail: View {
                     .frame(maxWidth: .infinity)
                     .padding()
                     .foregroundColor(.white)
-                    .background(.black)
+                    .background(convertColorNameToColor(selectedColor))
                     .cornerRadius(10)
 
             }
             .padding()
             .background(Color(uiColor: .secondarySystemBackground))
         }
+    }
 
+    func convertColorNameToColor(_ colorName: String) -> Color {
+        switch colorName {
+        case "grau meliert":
+            return .gray
+        case "schwarz":
+            return .black
+        case "kastanienbraun":
+            return .brown
+        default:
+            return .black // Default color
+        }
     }
 }
 
